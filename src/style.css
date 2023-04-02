@@ -1,0 +1,8 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+body {
+    background: #43c6ac;
+    background: -webkit-linear-gradient(to right, #f8ffae, #43c6ac);
+    background: linear-gradient(to right, #f8ffae, #43c6ac);
+  }

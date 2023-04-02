@@ -351,7 +351,25 @@ const allQuotes = [
     },
     {
       quote:
-        "“And they tell you that you're lucky, but you're so confused, 'cause you don't feel pretty, you just feel used.",
+        "And they tell you that you're lucky, but you're so confused, 'cause you don't feel pretty, you just feel used.",
+      song: "The Lucky One",
+      album: "Red",
+    },
+    {
+      quote:
+        "It was a few years later, I showed up here / And they still tell the legend of how you disappeared / How you took the money and your dignity and got the hell out.",
+      song: "The Lucky One",
+      album: "Red",
+    },
+    {
+      quote:
+        "They say you bought a bunch of land somewhere / Chose the Rose Garden over Madison Square / And it took some time, but I understand it now.",
+      song: "The Lucky One",
+      album: "Red",
+    },
+    {
+      quote:
+        "So overnight, you look like a '60s queen.",
       song: "The Lucky One",
       album: "Red",
     },
