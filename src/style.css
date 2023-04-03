@@ -1,10 +1,109 @@
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
-
-
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Fasthand&family=Great+Vibes&family=Homemade+Apple&family=Koulen&family=Marck+Script&family=Quicksand:wght@300;400;500&family=Raleway:wght@100;800&family=Righteous&family=Sacramento&display=swap");
 body {
-    background: #43c6ac;
-    background: -webkit-linear-gradient(to right, #f8ffae, #43c6ac);
-    background: linear-gradient(to right, #f8ffae, #43c6ac);
+  height: 97.5vh;
+  background-image: linear-gradient(
+    to right bottom,
+    #d16ba5,
+    #c37bbf,
+    #b08bd3,
+    #9a9ae1,
+    #86a8e7
+  );
+  overflow: hidden;
+}
+
+.content {
+  max-width: 600px;
+  padding: 20px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 15px 30px 15px 30px;
+  max-width: 500px;
+  max-height: 300px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 5px 4px 2px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border-top: #ee9be4 5px;
+  margin-top: 20px;
+  animation: blink 2s ease;
+  font-family: "Quicksand", sans-serif;
+}
+
+h2 {
+  background-color: #4a4be7;
+  color: #ffffff;
+  padding: 10px;
+  font-family: "Righteous", cursive;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 4px 4px #ee9be4;
+}
+
+
+
+.quote-box {
+  position: relative;
+  padding: 15px 30px 15px 30px;
+  max-width: 500px;
+  display: table;
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  box-shadow: 5px 4px 2px 1px rgba(0, 0, 0, 0.3);
+  animation: blink 2s ease;
+}
+
+#text {
+  font-family: "Fasthand", cursive;
+  text-align: center;
+  height: auto;
+  clear: both;
+  font-weight: 500;
+  font-size: 1.7em;
+}
+
+#song,
+#album {
+  font-family: "Quicksand", sans-serif;
+  text-align: right;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 4% auto 0% auto;
+}
+
+footer {
+  color: rgba(0, 0, 0, 0.579);
+  text-align: center;
+  margin: 10%;
+}
+
+@media (max-width: 500px) {
+  #quote-box {
+    width: auto;
+    max-width: none;
+    min-width: auto;
+    margin: 4%;
   }
+
+  #text {
+    width: auto;
+  }
+
+  .icon-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto 0%;
+  }
+}

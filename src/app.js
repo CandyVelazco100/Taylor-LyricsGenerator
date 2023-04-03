@@ -4,7 +4,7 @@ import "./style.css";
 
 const Quotes = ({ quote, song, album, handleClick }) => {
   return (
-    <div className="card">
+    <div className="quote-box">
       <div id="text">
         <p>{quote}</p>
       </div>
@@ -18,10 +18,11 @@ const Quotes = ({ quote, song, album, handleClick }) => {
       <div className="icon-box">
         <i className="fa-brands fa-twitter fa-bounce fa-sm"></i>
         <i className="fa-brands fa-tumblr fa-bounce fa-sm"></i>
+        <button onClick={handleClick} id="new-quote">
+          {" "}
+          New Quote{" "}
+        </button>
       </div>
-      <footer>
-        <p>Made with ❤️ by Candy</p>
-      </footer>
     </div>
   );
 };
@@ -51,15 +52,19 @@ const App = () => {
   return (
     <div className="content">
       <div className="card">
-        <h2>Random quote</h2>
-        <p>Do you want a random quote?</p>
-        <button onClick={handleClick} id="new-quote">
-          New Quote
-        </button>
+        <h2>Taylor Swift Random Lyrics Generator</h2>
+        <p>Click the button and get a random quote</p>
       </div>
-      <div id="quote">
-        <Quotes quote={quote} song={song} album={album} handleClick={handleClick} />
-      </div>
+      <Quotes
+        quote={quote}
+        song={song}
+        album={album}
+        handleClick={handleClick}
+      />
+
+      <footer>
+        <span>Made with ❤️ by Candy</span>
+      </footer>
     </div>
   );
 };

@@ -271,7 +271,7 @@ const allQuotes = [
   },
   {
     quote:
-      "And your mother's telling stories about you on a tee ball team. You taught me 'bout your past, thinking your future was me.",
+      "You taught me 'bout your past, thinking your future was me.",
     song: "All Too Well",
     album: "Red",
   },
@@ -282,7 +282,13 @@ const allQuotes = [
   },
   {
     quote:
-      "Maybe we got lost in translation, maybe I asked for too much. But maybe this thing was a masterpiece 'til you tore it all up. Running scared, I was there, I remember it all too well.",
+      "Maybe we got lost in translation, maybe I asked for too much. But maybe this thing was a masterpiece 'til you tore it all up.",
+    song: "All Too Well",
+    album: "Red",
+  },
+  {
+    quote:
+      "Running scared, I was there, I remember it all too well.",
     song: "All Too Well",
     album: "Red",
   },
@@ -1178,12 +1184,6 @@ const allQuotes = [
   },
   {
     quote:
-      "You told your family for a reason / You couldn't keep it in / Your sister splashed out on the bottle",
-    song: "Champagne Problems",
-    album: "Evermore",
-  },
-  {
-    quote:
       '"This dorm was once a madhouse" I made a joke, "Well, it\'s made for me"',
     song: "Champagne Problems",
     album: "Evermore",
@@ -1515,7 +1515,7 @@ const allQuotes = [
     album: "Midnights",
   },
   {
-    quote: "Uh-huh, we're burned for better / I vowed I would always be yours",
+    quote: "We're burned for better / I vowed I would always be yours",
     song: "The Great War",
     album: "Midnights",
   },
