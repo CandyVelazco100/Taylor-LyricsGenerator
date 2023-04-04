@@ -9,7 +9,7 @@ const Quotes = ({ quote, song, album, handleClick }) => {
         <p>{quote}</p>
       </div>
       <div id="song">
-        <p>{song}</p>
+        <p>{"- "}{song}</p>
       </div>
       <div id="album">
         <p>{album}</p>
@@ -63,7 +63,13 @@ const App = () => {
       />
 
       <footer>
-        <span>Made with ❤️ by Candy</span>
+        <p>
+          Made with{" "}
+          <span role="img" aria-label="smiling face with heart-eyes">
+            ❤️
+          </span>{" "}
+          by Candy
+        </p>
       </footer>
     </div>
   );

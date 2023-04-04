@@ -1,5 +1,6 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Fasthand&family=Great+Vibes&family=Homemade+Apple&family=Koulen&family=Marck+Script&family=Quicksand:wght@300;400;500&family=Raleway:wght@100;800&family=Righteous&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@200&family=Satisfy&display=swap");
 body {
   height: 97.5vh;
   background-image: linear-gradient(
@@ -33,19 +34,19 @@ body {
   margin-top: 20px;
   animation: blink 2s ease;
   font-family: "Quicksand", sans-serif;
+  font-size: 17px;
 }
 
 h2 {
   background-color: #4a4be7;
   color: #ffffff;
   padding: 10px;
-  font-family: "Righteous", cursive;
+  font-family: "Bebas Neue", cursive;
+  font-size: 35px;
   text-align: center;
   border-radius: 5px;
   box-shadow: 4px 4px #ee9be4;
 }
-
-
 
 .quote-box {
   position: relative;
@@ -62,18 +63,21 @@ h2 {
 }
 
 #text {
-  font-family: "Fasthand", cursive;
+  font-family: "Satisfy", cursive;
   text-align: center;
   height: auto;
   clear: both;
   font-weight: 500;
-  font-size: 1.7em;
+  font-size: 27px;
+  animation: blink 1.4s ease;
 }
 
 #song,
 #album {
   font-family: "Quicksand", sans-serif;
   text-align: right;
+  font-size: 17px;
+  animation: blink 1.4s ease;
 }
 
 .icon-box {
@@ -82,10 +86,22 @@ h2 {
   margin: 4% auto 0% auto;
 }
 
+button {
+  height: 50px;
+  width: 150px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 21px;
+  color: #ffffff;
+  background-color: #ee9be4;
+  box-shadow: 4px 4px #4a4be7;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 footer {
   color: rgba(0, 0, 0, 0.579);
   text-align: center;
-  margin: 10%;
+  margin-top: auto;
 }
 
 @media (max-width: 500px) {
