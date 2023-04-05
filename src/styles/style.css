@@ -1,6 +1,5 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Fasthand&family=Great+Vibes&family=Homemade+Apple&family=Koulen&family=Marck+Script&family=Quicksand:wght@300;400;500&family=Raleway:wght@100;800&family=Righteous&family=Sacramento&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@200&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300;400;500&family=Raleway:wght@200&family=Satisfy&display=swap");
 body {
   height: 97.5vh;
   background-image: linear-gradient(
@@ -82,6 +81,7 @@ h2 {
 
 .icon-box {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin: 4% auto 0% auto;
 }
@@ -96,6 +96,48 @@ button {
   box-shadow: 4px 4px #4a4be7;
   padding: 5px;
   border-radius: 5px;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media > a {
+  margin-right: 0.5rem;
+  background: #ee9be4;
+  box-shadow: 4px 4px #4a4be7;
+  border-radius: 3px;
+  color: #4a4be7;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.social-media > a:hover {
+  opacity: 0.9;
+  animation: backwards;
+}
+
+.fa-brands fa-twitter fa-bounce {
+  height: 50px;
+  width: 150px;
+  font-size: 21px;
+  color: #ffffff;
+  background-color: #ee9be4;
+  box-shadow: 4px 4px #4a4be7;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.fa-brands fa-tumblr fa-bounce {
+  height: 50px;
+  width: 150px;
+  font-size: 21px;
+  color: #ffffff;
+  background-color: #ee9be4;
+  box-shadow: 4px 4px #4a4be7;
+  padding: 5px;
+  border-radius: 3px;
 }
 
 footer {

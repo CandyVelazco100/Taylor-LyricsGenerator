@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import allQuotes from "./allQuotes";
-import "./style.css";
+import "./styles/style.css";
 
 const Quotes = ({ quote, song, album, handleClick }) => {
   return (
@@ -9,15 +9,35 @@ const Quotes = ({ quote, song, album, handleClick }) => {
         <p>{quote}</p>
       </div>
       <div id="song">
-        <p>{"- "}{song}</p>
+        <p>
+          {"- "}
+          {song}
+        </p>
       </div>
       <div id="album">
         <p>{album}</p>
       </div>
 
       <div className="icon-box">
-        <i className="fa-brands fa-twitter fa-bounce fa-sm"></i>
-        <i className="fa-brands fa-tumblr fa-bounce fa-sm"></i>
+        <div className="social-media">
+          <a
+            href={`https:/twitter.com/intent/tweet?text=${quote}`}
+            target="_blank"
+            reel="noopener noreferrer"
+            id="twet-quote"
+          >
+            <i className="fa-brands fa-twitter"></i>{" "}
+          </a>
+          <a
+            href={`https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes&caption=&content=${quote}&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button`}
+            target="_blank"
+            rel="noopener noreferrer"
+            id="tumblr-quote"
+          >
+            <i className="fa-brands fa-tumblr"></i>{" "}
+          </a>
+        </div>
+
         <button onClick={handleClick} id="new-quote">
           {" "}
           New Quote{" "}
