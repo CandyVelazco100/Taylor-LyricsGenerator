@@ -165,3 +165,17 @@ footer {
     margin: 10% auto 0%;
   }
 }
+
+@keyframes blink {
+  0% {
+      opacity: 0;
+  }
+
+  70% {
+      opacity: .5;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}

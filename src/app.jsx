@@ -4,21 +4,21 @@ import "./styles/style.css";
 
 const Quotes = ({ quote, song, album, handleClick }) => {
   return (
-    <div className="quote-box">
-      <div id="text">
+    <div className="quote-box" style={{ animation: "blink 2s ease" }}>
+      <div id="text" style={{ animation: "blink 1.4s ease" }}>
         <p>{quote}</p>
       </div>
-      <div id="song">
+      <div id="song" style={{ animation: "blink 1.4s ease" }}>
         <p>
           {"- "}
           {song}
         </p>
       </div>
-      <div id="album">
+      <div id="album" style={{ animation: "blink 1.4s ease" }}>
         <p>{album}</p>
       </div>
 
-      <div className="icon-box">
+      <div className="icon-box" style={{ animation: "blink 1.4s ease" }}>
         <div className="social-media">
           <a
             href={`https:/twitter.com/intent/tweet?text=${quote}`}
