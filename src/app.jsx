@@ -21,9 +21,9 @@ const Quotes = ({ quote, song, album, handleClick }) => {
       <div className="icon-box" style={{ animation: "blink 1.4s ease" }}>
         <div className="social-media">
           <a
-            href={`//twitter.com/intent/tweet?text=${quote}`}
+            href={`https://twitter.com/intent/tweet?text=${quote}`}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="operner"
             id="twet-quote"
           >
             <i className="fa-brands fa-twitter"></i>{" "}
