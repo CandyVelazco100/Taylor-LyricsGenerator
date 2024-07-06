@@ -1,65 +1,73 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300;400;500&family=Raleway:wght@200&family=Satisfy&display=swap");
-
 body {
   height: 97.5vh;
-  background-image: linear-gradient(to right bottom, #d16ba5, #c37bbf, #b08bd3, #9a9ae1, #86a8e7);
+  background-image: linear-gradient(
+    to right bottom,
+    #d16ba5,
+    #c37bbf,
+    #b08bd3,
+    #9a9ae1,
+    #86a8e7
+  );
   overflow: hidden;
-  margin: 0;
-  font-size: 1rem;
 }
 
 .content {
   max-width: 600px;
   padding: 20px;
   margin: auto;
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .card {
-  padding: 1rem;
-  max-width: 100%;
+  padding: 15px 30px 15px 30px;
+  max-width: 500px;
+  max-height: 300px;
   text-align: center;
   background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 4px 2px 1px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  border-top: 5px solid #ee9be4;
-  margin-top: 1rem;
+  border-top: #ee9be4 5px;
+  margin-top: 20px;
   animation: blink 2s ease;
   font-family: "Quicksand", sans-serif;
-  font-size: 1rem;
+  font-size: 17px;
 }
 
 h2 {
   background-color: #4a4be7;
-  color: white;
-  padding: 0.5rem;
+  color: #ffffff;
+  padding: 10px;
   font-family: "Bebas Neue", cursive;
-  font-size: 2rem;
+  font-size: 35px;
   text-align: center;
   border-radius: 5px;
-  box-shadow: 2px 2px 4px #ee9be4;
-  width: 100%;
+  box-shadow: 4px 4px #ee9be4;
 }
 
 .quote-box {
   position: relative;
-  padding: 1rem;
-  max-width: 100%;
+  padding: 15px 30px 15px 30px;
+  max-width: 500px;
+  display: table;
   background-color: white;
   border-radius: 10px;
-  margin-top: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  box-shadow: 5px 4px 2px 1px rgba(0, 0, 0, 0.3);
   animation: blink 2s ease;
 }
 
 #text {
   font-family: "Satisfy", cursive;
   text-align: center;
+  height: auto;
+  clear: both;
   font-weight: 500;
-  font-size: 1.75rem;
+  font-size: 28px;
   animation: blink 1.4s ease;
 }
 
@@ -67,99 +75,107 @@ h2 {
 #album {
   font-family: "Quicksand", sans-serif;
   text-align: right;
-  font-size: 1rem;
+  font-size: 17px;
   animation: blink 1.4s ease;
 }
 
 .icon-box {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  margin-top: 1rem;
+  justify-content: space-between;
+  margin: 4% auto 0% auto;
 }
 
 button {
   height: 50px;
   width: 150px;
   font-family: "Bebas Neue", cursive;
-  font-size: 1.25rem;
-  color: white;
+  font-size: 21px;
+  color: #ffffff;
   background-color: #ee9be4;
-  box-shadow: 2px 2px 4px #4a4be7;
-  padding: 0.5rem;
+  box-shadow: 4px 4px #4a4be7;
+  padding: 5px;
   border-radius: 5px;
-  border: none;
-  cursor: pointer;
 }
 
 .social-media {
   display: flex;
-  gap: 0.5rem;
 }
 
 .social-media > a {
+  margin-right: 0.5rem;
   background: #ee9be4;
-  box-shadow: 2px 2px 4px #4a4be7;
+  box-shadow: 4px 4px #4a4be7;
   border-radius: 3px;
   color: #4a4be7;
-  padding: 0.5rem;
+  padding: 0.3rem 0.5rem;
   cursor: pointer;
-  text-decoration: none;
+  border-radius: 3px;
 }
 
 .social-media > a:hover {
   opacity: 0.9;
+  animation: backwards;
+}
+
+.fa-brands fa-twitter fa-bounce {
+  height: 50px;
+  width: 150px;
+  font-size: 21px;
+  color: #ffffff;
+  background-color: #ee9be4;
+  box-shadow: 4px 4px #4a4be7;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.fa-brands fa-tumblr fa-bounce {
+  height: 50px;
+  width: 150px;
+  font-size: 21px;
+  color: #ffffff;
+  background-color: #ee9be4;
+  box-shadow: 4px 4px #4a4be7;
+  padding: 5px;
+  border-radius: 3px;
 }
 
 footer {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.579);
   text-align: center;
   margin-top: auto;
-  padding: 1rem;
 }
 
-@media (max-width: 600px) {
-  .content {
-    padding: 1rem;
-  }
-
-  .card, .quote-box {
-    padding: 1rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-    padding: 0.5rem;
+@media (max-width: 500px) {
+  #quote-box {
+    width: auto;
+    max-width: none;
+    min-width: auto;
+    margin: 4%;
   }
 
   #text {
-    font-size: 1.5rem;
+    width: auto;
   }
 
   .icon-box {
     flex-direction: column;
-    gap: 1rem;
-  }
-
-  button {
-    width: 100%;
-  }
-
-  .social-media {
     justify-content: center;
+    align-items: center;
+    margin: 10% auto 0%;
   }
 }
 
 @keyframes blink {
   0% {
-    opacity: 0;
+      opacity: 0;
   }
+
   70% {
-    opacity: 0.5;
+      opacity: .5;
   }
+
   100% {
-    opacity: 1;
+      opacity: 1;
   }
 }
